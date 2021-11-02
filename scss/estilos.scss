@@ -39,8 +39,7 @@ body {
   max-width: 1180px;
   width: 97%;
   margin: 0 auto;
-  padding: 40px 20px;  
-  min-height:600px;
+  padding: 40px 20px; 
   display:flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +114,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "article explore";
     align-items: center;
-    height: 400px;
+ 
+    border:1px solid red;
     &__article {
       grid-area: article;
     }

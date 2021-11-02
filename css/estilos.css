@@ -218,7 +218,6 @@ body {
   width: 97%;
   margin: 0 auto;
   padding: 40px 20px;
-  min-height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +330,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 400px;
+    border: 1px solid red;
   }
   .home__article {
     -ms-grid-row: 1;

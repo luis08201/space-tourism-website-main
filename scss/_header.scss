@@ -115,17 +115,28 @@
       position: relative;
       right: 0;
       flex-direction: row;
-      justify-content: flex-end;     
+      justify-content: flex-end;    
+      padding:35px;
+
     }
 
     &__link {
       &::after {
-        bottom: -20px;
+        bottom: -35px;
       }
     }
 
     &__link span {
       display: none;
+    }
+  }
+  @media screen and (min-width:1024px){
+     &__logo{
+       &::after {
+        top: 50%;
+        left: 45%;
+        width: 70%;
+      }
     }
   }
 }

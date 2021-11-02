@@ -8,10 +8,10 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
-  transition:all 0.5s 0s linear;
+  transition: all 0.5s 0s linear;
 
   @media screen and (min-width: 768px) {
     background-image: url(../assets/home/background-home-tablet.jpg);
@@ -19,7 +19,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-   height: 100%;
+    height: 100vh;
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
   }
@@ -30,7 +30,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-     height: 100%;
+    height: 100vh;
   }
 }
 
@@ -39,7 +39,11 @@ body {
   max-width: 1180px;
   width: 97%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 40px 20px;  
+  min-height:600px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home {

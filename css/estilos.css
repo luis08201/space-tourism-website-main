@@ -169,7 +169,7 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   -webkit-transition: background-image 0.5s ease-in-out;
   transition: background-image 0.5s ease-in-out;
   -webkit-transition: all 0.5s 0s linear;
@@ -183,7 +183,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     -webkit-transition: background-image 0.5s ease-in-out;
     transition: background-image 0.5s ease-in-out;
   }
@@ -196,7 +196,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 }
 
@@ -206,6 +206,16 @@ body {
   width: 97%;
   margin: 0 auto;
   padding: 40px 20px;
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .home {

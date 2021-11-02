@@ -1,0 +1,131 @@
+@import "resource";
+
+.header {
+  min-width: 270px;
+  max-width: 1180px;
+  width: 97%;
+  margin: 0 auto;
+  padding: 30px 20px;
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__menuToggle {
+    background-image: url(../assets/shared/icon-hamburger.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    z-index: 99999;
+
+    &.active {
+      background-image: url(../assets/shared/icon-close.svg);
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    z-index: 99997;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(
+      70deg,
+      rgba(0, 0, 0, 0.7),
+      rgba(255, 255, 255, 0.7)
+    );
+    backdrop-filter: blur(11.125rem) brightness(155%) opacity(100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px 40px;
+    transition: right 0.5s 0s linear;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    font-family: $Barlow-condensed;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 0%;
+      height: 3px;
+      background-color: #fff;
+      color: #fff;
+      transition: width 0.5s 0s ease;
+    }
+
+    &:hover::after {
+      content: "";
+      width: 100%;
+      opacity: 1;
+    }
+
+    &.active::after {
+      content: "";
+      opacity: 0.5;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__menuToggle {
+      display: none;
+    }
+    &__logo{
+      width:38%;
+      position:relative;
+       &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        background-color: rgba(255, 255, 255, 0.2);
+        height: 3px;
+        width: 50%;
+      }
+    }
+
+    &__menu {
+      width:58%;
+      position: relative;
+      right: 0;
+      flex-direction: row;
+      justify-content: flex-end;     
+    }
+
+    &__link {
+      &::after {
+        bottom: -20px;
+      }
+    }
+
+    &__link span {
+      display: none;
+    }
+  }
+}

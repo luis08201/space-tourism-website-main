@@ -1,0 +1,140 @@
+@import "resource";
+@import "header";
+
+body {
+  font-family: $Barlow;
+  background-image: url(../assets/home/background-home-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+  transition:all 0.5s 0s linear;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../assets/home/background-home-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+   height: 100%;
+    -webkit-transition: background-image 0.5s ease-in-out;
+    transition: background-image 0.5s ease-in-out;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+     height: 100%;
+  }
+}
+
+.main {
+  min-width: 270px;
+  max-width: 1180px;
+  width: 97%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas:
+    "article"
+    "explore";
+  gap: 40px;
+
+  &__article {
+    grid-area: article;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__explore {
+    grid-area: explore;
+    display: flex;
+    justify-content: center;
+
+    &--cta {
+      font-family: $Bellefair;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #000;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      width: 200px;
+      font-size: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: box-shadow 0.5s 0s ease;
+
+      &:hover {
+        box-shadow: 0px 0 10px 30px rgba(255, 255, 255, 0.274);
+      }
+    }
+  }
+
+  &__middleheading {
+    font-family: $Barlow-condensed;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  &__firstheading {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: $Bellefair;
+    font-size: 85px;
+    font-weight: 300;
+  }
+
+  &__paragraph {
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "article explore";
+    align-items: center;
+    height: 400px;
+    &__article {
+      grid-area: article;
+    }
+    &__explore {
+      grid-area: explore;
+      &--cta {
+        width: 300px;
+        height: 300px;
+        font-size: 30px;
+      }
+    }
+    &__middleheading {
+      font-size: 26px;
+    }
+
+    &__firstheading {
+      font-size: 150px;
+    }
+
+    &__paragraph {
+      font-size: 18px;
+      text-align: left;
+      line-height: 28px;
+    }
+  }
+}

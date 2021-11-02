@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/destination.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Space Tourism | Landing Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <header class="header__main">
+            <div class="header__logo">
+                <img src="assets/shared/logo.svg" alt="" class="header__photo">
+            </div>
+            <div class="header__menuToggle" id="toggle"></div>
+            <ul class="header__menu" id="menu-container">
+                <li class="header__list">
+                    <a href="index.html" class="header__link ">
+                        <span>00</span>
+                        home</a>
+                </li>
+                <li class="header__list">
+                    <a href="destination.html" class="header__link active">
+                        <span>01</span>
+                        destination</a>
+                </li>
+                <li class="header__list">
+                    <a href="crew.html" class="header__link">
+                        <span>02</span>
+                        crew</a>
+                </li>
+                <li class="header__list">
+                    <a href="technology.html" class="header__link">
+                        <span>03</span>
+                        technology</a>
+                </li>
+            </ul>
+        </header>
+    </header>
+    <main class="main">
+        <div class="main__title">
+            <h3 class="main__middleheading">
+                <span>01</span>
+                pick your destination
+            </h3>
+        </div>
+        <section class="main__planets">
+            <figure class="main__picture active" data-box="moon">
+                <img src="assets/destination/image-moon.webp" alt="moon photo" class="main__photo">
+            </figure>
+            <figure class="main__picture" data-box="mars">
+                <img src="assets/destination/image-mars.webp" alt="mars photo" class="main__photo">
+            </figure>
+            <figure class="main__picture" data-box="europa">
+                <img src="assets/destination/image-europa.webp" alt="europa photo" class="main__photo">
+            </figure>
+            <figure class="main__picture" data-box="titan">
+                <img src="assets/destination/image-titan.webp" alt="titan photo" class="main__photo">
+            </figure>
+        </section>
+        <section class="main__navigation">
+            <button class="main__navigation--btn active" data-box="moon">moon</button>
+            <button class="main__navigation--btn" data-box="mars">mars</button>
+            <button class="main__navigation--btn" data-box="europa">europa</button>
+            <button class="main__navigation--btn" data-box="titan">titan</button>
+        </section>
+        <section class="main__planetsInfo">
+            <div class="main__planetsInfo__item active" data-box="moon">
+                <div class="main__planetsInfo__description">
+                    <h1 class="main__firstheading">
+                        moon
+                    </h1>
+                    <p class="main__paragraph">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain
+                        perspective and come back
+                        refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing
+                        sites.
+                    </p>
+                </div>
+                <div class="main__planetsInfo__data">
+                    <div class="main__planetsInfo__distance">
+                        <h4 class="main__smallheading">avg. distance</h4>
+                        <h2 class="main__secondheading">
+                            384,000 km
+                        </h2>
+                    </div>
+                    <div class="main__planetsInfo__time">
+                        <h4 class="main__smallheading">est. travel time</h4>
+                        <h2 class="main__secondheading">
+                            3 days
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main__planetsInfo__item " data-box="mars">
+                <div class="main__planetsInfo__description">
+                    <h1 class="main__firstheading">
+                        mars
+                    </h1>
+                    <p class="main__paragraph">
+                        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our
+                        solar system. It’s two and a half times the size of Everest!
+                    </p>
+                </div>
+                <div class="main__planetsInfo__data">
+                    <div class="main__planetsInfo__distance">
+                        <h4 class="main__smallheading">avg. distance</h4>
+                        <h2 class="main__secondheading">
+                           225 mil. km
+                        </h2>
+                    </div>
+                    <div class="main__planetsInfo__time">
+                        <h4 class="main__smallheading">est. travel time</h4>
+                        <h2 class="main__secondheading">
+                            9 months
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main__planetsInfo__item" data-box="europa">
+                <div class="main__planetsInfo__description">
+                    <h1 class="main__firstheading">
+                        europa
+                    </h1>
+                    <p class="main__paragraph">
+                        The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s
+                        perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.
+                    </p>
+                </div>
+                <div class="main__planetsInfo__data">
+                    <div class="main__planetsInfo__distance">
+                        <h4 class="main__smallheading">avg. distance</h4>
+                        <h2 class="main__secondheading">
+                            628 mil. km
+                        </h2>
+                    </div>
+                    <div class="main__planetsInfo__time">
+                        <h4 class="main__smallheading">est. travel time</h4>
+                        <h2 class="main__secondheading">
+                            3 years
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="main__planetsInfo__item " data-box="titan">
+                <div class="main__planetsInfo__description">
+                    <h1 class="main__firstheading">
+                        titan
+                    </h1>
+                    <p class="main__paragraph">
+                        The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred
+                        degrees colder!). As a bonus, you get striking views of the Rings of Saturn.
+                    </p>
+                </div>
+                <div class="main__planetsInfo__data">
+                    <div class="main__planetsInfo__distance">
+                        <h4 class="main__smallheading">avg. distance</h4>
+                        <h2 class="main__secondheading">
+                            1.6 bil. km
+                        </h2>
+                    </div>
+                    <div class="main__planetsInfo__time">
+                        <h4 class="main__smallheading">est. travel time</h4>
+                        <h2 class="main__secondheading">
+                           7 years
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/toggle.js"></script>
+    <script src="js/filtroDestination.js"></script>
+</body>
+
+</html>

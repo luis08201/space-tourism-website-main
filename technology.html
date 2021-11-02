@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/technology.css">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <title>Space Tourism | Landing Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <header class="header__main">
+            <div class="header__logo">
+                <img src="assets/shared/logo.svg" alt="" class="header__photo">
+            </div>
+            <div class="header__menuToggle" id="toggle"></div>
+            <ul class="header__menu" id="menu-container">
+                <li class="header__list">
+                    <a href="index.html" class="header__link ">
+                        <span>00</span>
+                        home</a>
+                </li>
+                <li class="header__list">
+                    <a href="destination.html" class="header__link">
+                        <span>01</span>
+                        destination</a>
+                </li>
+                <li class="header__list">
+                    <a href="crew.html" class="header__link">
+                        <span>02</span>
+                        crew</a>
+                </li>
+                <li class="header__list">
+                    <a href="technology.html" class="header__link active">
+                        <span>03</span>
+                        technology</a>
+                </li>
+            </ul>
+        </header>
+    </header>
+    <main class="main">
+        <div class="main__title">
+            <h3 class="main__middleheading">
+                <span>03</span>
+                space launch 101
+            </h3>
+        </div>
+        <section class="main__banner">
+            <picture class="main__picture active" data-box="launchvehicle">
+                <source media="(orientation: portrait )" srcset="assets/technology/image-launch-vehicle-landscape.jpg">
+                <source media="(orientation:  landscape)" srcset="assets/technology/image-launch-vehicle-portrait.jpg">
+                <img src="assets/technology/image-launch-vehicle-portrait.jpg" alt="" class="main__photo">
+            </picture>
+            <picture class="main__picture" data-box="spaceport">
+                <source media="(orientation: portrait )" srcset="assets/technology/image-spaceport-landscape.jpg">
+                <source media="(orientation: landscape )" srcset="assets/technology/image-spaceport-portrait.jpg">
+                <img src="assets/technology/image-spaceport-portrait.jpg" alt="" class="main__photo">
+            </picture>
+            <picture class="main__picture" data-box="spacecapsule">
+                <source media="(orientation: portrait )" srcset="assets/technology/image-space-capsule-landscape.jpg">
+                <source media="(orientation: landscape )" srcset="assets/technology/image-space-capsule-portrait.jpg">
+                <img src="assets/technology/image-space-capsule-portrait.jpg" alt="" class="main__photo">
+            </picture>
+        </section>
+        <section class="main__pagination">
+            <button class="main__pagination--btn active" data-box="launchvehicle">1</button>
+            <button class="main__pagination--btn" data-box="spaceport">2</button>
+            <button class="main__pagination--btn" data-box="spacecapsule">3</button>
+        </section>
+        <section class="main__bannerDescription">
+            <div class="main__bannerDescription--item active" data-box="launchvehicle">
+                <h2 class="main__secondheading">the terminology...</h2>
+                <h1 class="main__firstheading">launch vehicle</h1>
+                <p class="main__paragraph">
+                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from
+                    Earth's surface to space,
+                    usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation.
+                    Standing 150 metres tall,
+                    it's quite an awe-inspiring sight on the launch pad!
+                </p>
+            </div>
+            <div class="main__bannerDescription--item " data-box="spaceport">
+                <h2 class="main__secondheading">the terminology...</h2>
+                <h1 class="main__firstheading">spaceport</h1>
+                <p class="main__paragraph">
+                    A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, by analogy to the
+                    seaport for ships or
+                    airport for aircraft. Based in the famous Cape Canaveral, our spaceport is ideally situated to take
+                    advantage of the
+                    Earth’s rotation for launch.
+                </p>
+            </div>
+            <div class="main__bannerDescription--item " data-box="spacecapsule">
+                <h2 class="main__secondheading">the terminology...</h2>
+                <h1 class="main__firstheading">space capsule</h1>
+                <p class="main__paragraph">
+                    A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the
+                    Earth's atmosphere
+                    without wings. Our capsule is where you'll spend your time during the flight. It includes a space
+                    gym, cinema, and
+                    plenty of other activities to keep you entertained.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/toggle.js"></script>
+    <script src="js/filtroTechnology.js"></script>
+</body>
+
+</html>

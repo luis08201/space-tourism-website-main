@@ -114,8 +114,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "article explore";
     align-items: center;
- 
-    border:1px solid red;
     &__article {
       grid-area: article;
     }
